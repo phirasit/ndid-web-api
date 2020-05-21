@@ -20,6 +20,7 @@ const ErrorCodeInfo = ({ match: { params: { type } } }) => {
       setErrorCodeList([]);
       try {
         const result = await GetErrorCodeList(type);
+        result.sort((a, b) => (a.id < b.id) ? -1 : 1);
         setErrorCodeList(result);
       } catch (e) {
         console.error(e);
