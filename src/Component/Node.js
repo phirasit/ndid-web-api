@@ -73,7 +73,7 @@ const NodeDetail = ({ match: { params: { nodeID } } }) => {
     node_id_whitelist_active,
     node_id_whitelist,
     mq,
-    proxy,
+    // proxy,
     supported_request_message_data_url_type_list,
   } = info || {}
 

@@ -26,9 +26,7 @@ const DataRequestDisplay = ({ request: { as_id_list, response_list, ...details }
         {as_id_list.map(as_id => <NodeDisplay key={as_id} nodeID={as_id} />)}
       </TableCell>
       <TableCell>
-        {response_list.map(({}) => (
-          <> </>
-        ))}
+        Response List # TODO 
       </TableCell>
     </TableRow>
   )
